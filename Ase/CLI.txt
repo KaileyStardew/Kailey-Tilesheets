@@ -1,0 +1,54 @@
+---***MINES***---
+
+---mines export---
+"C:\Program Files (x86)\Steam\steamapps\common\Aseprite\aseprite.exe" -b "C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\Mods\[CP] Kailey's Tilesheets\assets\Ase\Mines\kailey_mines.ase" --split-tags --filename-format "C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\Mods\[CP] Kailey's Tilesheets\assets\Mines"\{title}{tag}.{extension} --save-as kailey_.png
+
+---mines_extra export---
+"C:\Program Files (x86)\Steam\steamapps\common\Aseprite\aseprite.exe" -b "C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\Mods\[CP] Kailey's Tilesheets\assets\Ase\Mines\kailey_mines_extra.ase" --split-tags --filename-format "C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\Mods\[CP] Kailey's Tilesheets\assets\Mines"\kailey_{tag}_extra.{extension} --save-as kailey_mine_extra.png
+
+---***OUTDOORS***---
+
+---shadows export---
+"C:\Program Files (x86)\Steam\steamapps\common\Aseprite\aseprite.exe" -b "C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\Mods\[CP] Kailey's Tilesheets\assets\Ase\Outdoors\kailey_shadows.ase" --split-tags --filename-format "C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\Mods\[CP] Kailey's Tilesheets\assets\Outdoors"\{tag}_{title}.{extension} --save-as kailey_shadows.png
+
+
+---animations export---
+"C:\Program Files (x86)\Steam\steamapps\common\Aseprite\aseprite.exe" -b "C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\Mods\[CP] Kailey's Tilesheets\assets\Ase\Outdoors\kailey_animations.ase" --split-tags --filename-format "C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\Mods\[CP] Kailey's Tilesheets\assets\Outdoors"\{tag}\{title}.{extension} --save-as kailey_animations.png
+
+---desert export---
+"C:\Program Files (x86)\Steam\steamapps\common\Aseprite\aseprite.exe" -b "C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\Mods\[CP] Kailey's Tilesheets\assets\Ase\Outdoors\kailey_desert.ase" --split-tags --filename-format "C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\Mods\[CP] Kailey's Tilesheets\assets\Outdoors"\{tag}\{title}.{extension} --save-as kailey_desert.png
+
+---spring outdoors export---
+"C:\Program Files (x86)\Steam\steamapps\common\Aseprite\aseprite.exe" -b "C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\Mods\[CP] Kailey's Tilesheets\assets\Ase\Outdoors\spring_kailey_outdoors.ase" --split-tags --filename-format "C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\Mods\[CP] Kailey's Tilesheets\assets\Outdoors"\{tag}\{title}.{extension} --save-as spring_kailey_outdoors.png
+
+---summer outdoors export---
+"C:\Program Files (x86)\Steam\steamapps\common\Aseprite\aseprite.exe" -b "C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\Mods\[CP] Kailey's Tilesheets\assets\Ase\Outdoors\summer_kailey_outdoors.ase" --split-tags --filename-format "C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\Mods\[CP] Kailey's Tilesheets\assets\Outdoors"\{tag}\{title}.{extension} --save-as summer_kailey_outdoors.png
+
+---fall outdoors export---
+"C:\Program Files (x86)\Steam\steamapps\common\Aseprite\aseprite.exe" -b "C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\Mods\[CP] Kailey's Tilesheets\assets\Ase\Outdoors\fall_kailey_outdoors.ase" --split-tags --filename-format "C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\Mods\[CP] Kailey's Tilesheets\assets\Outdoors"\{tag}\{title}.{extension} --save-as fall_kailey_outdoors.png
+
+---winter outdoors export---
+"C:\Program Files (x86)\Steam\steamapps\common\Aseprite\aseprite.exe" -b "C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\Mods\[CP] Kailey's Tilesheets\assets\Ase\Outdoors\winter_kailey_outdoors.ase" --split-tags --filename-format "C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\Mods\[CP] Kailey's Tilesheets\assets\Outdoors"\{tag}\{title}.{extension} --save-as winter_kailey_outdoors.png
+
+---***INDOORS***---
+
+---food indoors export---
+"C:\Program Files (x86)\Steam\steamapps\common\Aseprite\aseprite.exe" -b "C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\Mods\[CP] Kailey's Tilesheets\assets\Ase\Indoors\kailey_indoors_food.ase" --split-tags --filename-format "C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\Mods\[CP] Kailey's Tilesheets\assets\Indoors"\{tag}\{title}.{extension} --save-as kailey_indoors_food.png
+
+
+---furniture indoors export---
+"C:\Program Files (x86)\Steam\steamapps\common\Aseprite\aseprite.exe" -b "C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\Mods\[CP] Kailey's Tilesheets\assets\Ase\Indoors\kailey_indoors_furniture.ase" --split-tags --filename-format "C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\Mods\[CP] Kailey's Tilesheets\assets\Indoors"\{tag}\{title}.{extension} --save-as kailey_indoors_furniture.png
+
+
+---*MONSTERS*---
+"C:\Program Files (x86)\Steam\steamapps\common\Aseprite\aseprite.exe" -b "C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\Mods\[CP] Kailey's Tilesheets\assets\Ase\Monsters\kailey_clam_rockcrab.ase" --split-tags --filename-format "C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\Mods\[CP] Kailey's Tilesheets\assets\Monsters"\{tag}\{title}.{extension} --save-as kailey_clam_rockcrab.png
+
+"C:\Program Files (x86)\Steam\steamapps\common\Aseprite\aseprite.exe" -b "C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\Mods\[CP] Kailey's Tilesheets\assets\Ase\Monsters\kailey_false_chanterelle.ase" --split-tags --filename-format "C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\Mods\[CP] Kailey's Tilesheets\assets\Monsters"\{tag}\{title}.{extension} --save-as kailey_false_chanterelle.png
+
+"C:\Program Files (x86)\Steam\steamapps\common\Aseprite\aseprite.exe" -b "C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\Mods\[CP] Kailey's Tilesheets\assets\Ase\Monsters\kailey_false_commonmush.ase" --split-tags --filename-format "C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\Mods\[CP] Kailey's Tilesheets\assets\Monsters"\{tag}\{title}.{extension} --save-as kailey_false_commonmush.png
+
+"C:\Program Files (x86)\Steam\steamapps\common\Aseprite\aseprite.exe" -b "C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\Mods\[CP] Kailey's Tilesheets\assets\Ase\Monsters\kailey_false_morel.ase" --split-tags --filename-format "C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\Mods\[CP] Kailey's Tilesheets\assets\Monsters"\{tag}\{title}.{extension} --save-as kailey_false_morel.png
+
+"C:\Program Files (x86)\Steam\steamapps\common\Aseprite\aseprite.exe" -b "C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\Mods\[CP] Kailey's Tilesheets\assets\Ase\Monsters\kailey_false_purplemush.ase" --split-tags --filename-format "C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\Mods\[CP] Kailey's Tilesheets\assets\Monsters"\{tag}\{title}.{extension} --save-as kailey_false_purplemush.png
+
+"C:\Program Files (x86)\Steam\steamapps\common\Aseprite\aseprite.exe" -b "C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\Mods\[CP] Kailey's Tilesheets\assets\Ase\Monsters\kailey_false_redmush.ase" --split-tags --filename-format "C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\Mods\[CP] Kailey's Tilesheets\assets\Monsters"\{tag}\{title}.{extension} --save-as kailey_false_redmush.png
