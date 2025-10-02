@@ -1,0 +1,222 @@
+{
+	"Format": "2.5.0",
+//Config
+	"ConfigSchema": {
+		"RecolourOverride" : {
+			"AllowValues" : "False, Vanilla, Earthy, Starblue, VibrantPastoral, BlueGrass",
+            "Default": "False",
+			"Description": "Override the automatically detected outdoor colour scheme."
+		},
+		"IndoorRecolourOverride" : {
+			"AllowValues" : "False, Vanilla, Earthy, Starblue, VibrantPastoral, Elegant",
+            "Default": "False",
+			"Description": "Override the automatically detected indoor colour scheme."
+		},
+		"ItemRetextureOverride" : {
+			"AllowValues" : "False, Vanilla, FancyCropsAndForaging, Peachy",
+            "Default": "False",
+			"Description": "Override the automatically detected item retexture."
+		},
+		"HighContrastRuins" : {
+			"AllowValues" : "False, True",
+            "Default": "False",
+			"Description": "Overlays bright colours onto the ruins, for mod authors testing their maps. Mod users can ignore this option."
+		},
+	},
+    "DynamicTokens": [
+    //Map Recolours
+        {
+            "Name": "recolour",
+            "Value": "Vanilla",
+            "When":{
+                "RecolourOverride":"False, Vanilla"
+            }
+        },
+        {//-15sat HSL+
+            "Name": "recolour",
+            "Value": "Earthy",
+            "When": {
+                "HasMod": "DaisyNiko.EarthyRecolour",
+                "RecolourOverride":"False"
+            }
+        },
+        {//-15sat, +5v HSV+ (desert), +10hue (spring/summer greenery), 
+            "Name": "recolour",
+            "Value": "Starblue",
+            "When": {
+                "HasMod": "Lita.StarblueValley",
+                "RecolourOverride":"False"
+            }
+        },
+        {//-15sat HSV+ desert, -20sat HSL+
+            "Name": "recolour",
+            "Value": "VibrantPastoral",
+            "When": {
+                "HasMod": "grapeponta.VibrantPastoralRecolor",
+                "RecolourOverride":"False"
+            }
+        },
+        {//-20 sat +10 v HSV+ desert, -25 sat +10 v HSV+
+            "Name": "recolour",
+            "Value": "BlueGrass",
+            "When": {
+                "HasMod": "colling.bluegrass",
+                "RecolourOverride":"False"
+            }
+        },
+        {
+            "Name":"recolour",
+            "Value":"{{RecolourOverride}}",
+            "When":{
+                "RecolourOverride |contains=False":"false"
+            }
+        },
+	//Indoor Recolours
+        {
+            "Name": "indoorrecolour",
+            "Value": "Vanilla",
+            "When":{
+                "IndoorRecolourOverride":"False, Vanilla"
+            }
+        },
+        {//-5h, -15s HSL+ general, wood by hand, clinic blue by hand, -12h, -5l HSL+ foliage, -5h, -5s, -2l HSL+ flowers, -15s food
+            "Name": "indoorrecolour",
+            "Value": "Earthy",
+            "When": {
+                "HasMod": "DaisyNiko.EarthyInteriors",
+                "RecolourOverride":"False"
+            }
+        },
+        {//-15s HSV+ general, wood by hand, clinic blue by hand, +10h, -10s HSV+ foliage + flowers, -15s food
+            "Name": "indoorrecolour",
+            "Value": "Starblue",
+            "When": {
+                "HasMod": "Lita.StarblueValley",
+                "RecolourOverride":"False"
+            }
+        },
+        {//-15s HSL+ general, wood by hand, clinic blue by hand, foliage by hand, -15s food
+            "Name": "indoorrecolour",
+            "Value": "VibrantPastoral",//Main VPR
+            "When": {
+                "HasMod": "grapeponta.VibrantPastoralRecolor",
+                "RecolourOverride":"False"
+            }
+        },
+        {
+            "Name": "indoorrecolour",
+            "Value": "VibrantPastoral",//Just Interior VPR
+            "When": {
+                "HasMod": "grapeponta.VanillaInteriors",
+                "RecolourOverride":"False"
+            }
+        },
+        {//-25s HSV+ general, -20s HSV+ flowers, foliage by hand, clinic blue by hand, -5s HSL+ plates and beer foam,-20s HSV+ all other food
+            "Name": "indoorrecolour",
+            "Value": "Elegant",
+            "When": {
+                "HasMod": "colling.towninterior",
+                "RecolourOverride":"False"
+            }
+        },
+        {
+            "Name":"indoorrecolour",
+            "Value":"{{IndoorRecolourOverride}}",
+            "When":{
+                "IndoorRecolourOverride |contains=False":"false"
+            }
+        },
+	//Item Retextures
+        {
+            "Name": "itemretexture",
+            "Value": "Vanilla",
+            "When":{
+                "ItemRetextureOverride":"False, Vanilla"
+            }
+        },
+        {
+            "Name": "itemretexture",
+            "Value": "FancyCropsAndForaging",
+            "When": {
+                "HasMod": "Aimon111.FancyCropsAndForaging",
+                "ItemRetextureOverride":"False"
+            }
+        },
+        {
+            "Name": "itemretexture",
+            "Value": "Peachy",
+            "When": {
+                "HasMod": "peachitto.PeachyObjects",
+                "ItemRetextureOverride":"False"
+            }
+        },
+        {
+            "Name":"itemretexture",
+            "Value":"{{ItemRetextureOverride}}",
+            "When":{
+                "ItemRetextureOverride |contains=False":"false"
+            }
+        },
+    ],
+	"Changes": [
+	//LOADS
+	//MAPS
+		//Mines tilesheets
+		{
+			"LogName": "Kailey's Tilesheets-Maps-Mines",
+			"Action": "Load",
+			"Target": "Maps/kailey_mine, Maps/kailey_mine_extra, Maps/kailey_mine_dangerous, Maps/kailey_mine_dangerous_extra, Maps/kailey_mine_dark, Maps/kailey_mine_dark_extra, Maps/kailey_mine_dark_dangerous, Maps/kailey_mine_dark_dangerous_extra, Maps/kailey_mine_frost, Maps/kailey_mine_frost_extra, Maps/kailey_mine_frost_dangerous, Maps/kailey_mine_frost_dangerous_extra, Maps/kailey_mine_frost_dark, Maps/kailey_mine_frost_dark_extra, Maps/kailey_mine_frost_dark_dangerous, Maps/kailey_mine_frost_dark_dangerous_extra, Maps/kailey_mine_lava, Maps/kailey_mine_lava_extra, Maps/kailey_mine_lava_dangerous, Maps/kailey_mine_lava_dangerous_extra, Maps/kailey_mine_lava_dark, Maps/kailey_mine_lava_dark_extra, Maps/kailey_mine_lava_dark_dangerous, Maps/kailey_mine_lava_dark_dangerous_extra, Maps/kailey_mine_slime, Maps/kailey_mine_slime_extra, Maps/kailey_mine_slime_dangerous, Maps/kailey_mine_slime_dangerous_extra, Maps/kailey_mine_quarryshaft, Maps/kailey_mine_quarryshaft_extra, Maps/kailey_mine_desert, Maps/kailey_mine_desert_extra, Maps/kailey_mine_desert_dangerous, Maps/kailey_mine_desert_dangerous_extra, Maps/kailey_mine_desert_dark, Maps/kailey_mine_desert_dark_extra, Maps/kailey_mine_desert_dark_dangerous, Maps/kailey_mine_desert_dark_dangerous_extra, Maps/kailey_mine_dino, Maps/kailey_mine_dino_extra, Maps/kailey_mine_volcano, Maps/kailey_mine_volcano_extra, Maps/kailey_mine_waterfalls, Maps/kailey_mine_mushoverlay, Maps/kailey_mine_wateroverlay",
+			"FromFile": "assets/Mines/{{TargetWithoutPath}}.png"
+		},
+		//Outdoors tilesheets
+		{
+			"LogName": "Kailey's Tilesheets-Maps-Outdoors",
+			"Action": "Load",
+			"Target": "Maps/spring_kailey_outdoors, Maps/summer_kailey_outdoors, Maps/fall_kailey_outdoors, Maps/winter_kailey_outdoors, Maps/kailey_desert, Maps/kailey_animations",
+			"FromFile": "assets/Outdoors/{{recolour}}/{{TargetWithoutPath}}.png"
+		},
+		//Outdoors tilesheets- not recoloured
+		{
+			"LogName": "Kailey's Tilesheets-Maps-Outdoors",
+			"Action": "Load",
+			"Target": "Maps/spring_kailey_shadows, Maps/summer_kailey_shadows, Maps/fall_kailey_shadows, Maps/winter_kailey_shadows, Maps/kailey_high_contrast_ruins",
+			"FromFile": "assets/Outdoors/{{TargetWithoutPath}}.png"
+		},
+		//Indoors tilesheets
+		{
+			"LogName": "Kailey's Tilesheets-Maps-Indoors",
+			"Action": "Load",
+			"Target": "Maps/kailey_indoors_food, Maps/kailey_indoors_furniture",
+			"FromFile": "assets/Indoors/{{indoorrecolour}}/{{TargetWithoutPath}}.png"
+		},
+		//Monsters tilesheets
+			//The monster sheets are loaded to both Maps and Characters so they can be used in events and on maps
+		{
+			"LogName": "Kailey's Tilesheets-Maps-Monsters",
+			"Action": "Load",
+			"Target": "Maps/kailey_clam_rockcrab, Maps/kailey_false_chanterelle, Maps/kailey_false_commonmush, Maps/kailey_false_morel, Maps/kailey_false_purplemush, Maps/kailey_false_redmush",
+			"FromFile": "assets/Monsters/{{itemretexture}}/{{TargetWithoutPath}}.png"
+		},		
+	//CHARACTERS
+		//Monsters tilesheets
+			//The monster sheets are loaded to both Maps and Characters so they can be used in events and on maps
+		{
+			"LogName": "Kailey's Tilesheets-Characters-Monsters",
+			"Action": "Load",
+			"Target": "Characters/Monsters/kailey_clam_rockcrab, Characters/Monsters/kailey_false_chanterelle, Characters/Monsters/kailey_false_commonmush, Characters/Monsters/kailey_false_morel, Characters/Monsters/kailey_false_purplemush, Characters/Monsters/kailey_false_redmush",
+			"FromFile": "assets/Monsters/{{itemretexture}}/{{TargetWithoutPath}}.png"
+		},
+		
+	//EDITS
+		{
+			"LogName": "Kailey's Tilesheets-Maps-Mines-HighContrastRuins",
+			"Action": "EditImage",
+			"Target": "Maps/kailey_mine_extra, Maps/kailey_mine_dangerous_extra, Maps/kailey_mine_dark_extra, Maps/kailey_mine_dark_dangerous_extra, Maps/kailey_mine_frost_extra, Maps/kailey_mine_frost_dangerous_extra, Maps/kailey_mine_frost_dark_extra, Maps/kailey_mine_frost_dark_dangerous_extra, Maps/kailey_mine_lava_extra, Maps/kailey_mine_lava_dangerous_extra, Maps/kailey_mine_lava_dark_extra, Maps/kailey_mine_lava_dark_dangerous_extra, Maps/kailey_mine_slime_extra, Maps/kailey_mine_slime_dangerous_extra, Maps/kailey_mine_quarryshaft_extra, Maps/kailey_mine_desert_extra, Maps/kailey_mine_desert_dangerous_extra, Maps/kailey_mine_desert_dark_extra, Maps/kailey_mine_desert_dark_dangerous_extra, Maps/kailey_mine_dino_extra, Maps/kailey_mine_volcano_extra, Maps/spring_kailey_outdoors, Maps/summer_kailey_outdoors, Maps/fall_kailey_outdoors, Maps/winter_kailey_outdoors, Maps/kailey_desert",
+			"FromFile": "assets/Outdoors/kailey_high_contrast_ruins.png",
+            "PatchMode": "Overlay",
+			"When": {
+				"HighContrastRuins": true,
+			},
+		},	
+	]
+}

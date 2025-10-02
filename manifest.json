@@ -1,0 +1,11 @@
+{
+  "Name": "[CP] Kailey's Tilesheets",
+  "Author": "KaileyStardew",
+  "Version": "1.0.0",
+  "Description": "Kailey's tilesheets for use in other mods. Do not upload the tilesheets with your mod.",
+  "UniqueID": "KaileyStardew.Tilesheets",
+  "UpdateKeys": [ "Nexus:???" ],
+  "ContentPackFor": {
+	"UniqueID": "Pathoschild.ContentPatcher",
+  }
+}
