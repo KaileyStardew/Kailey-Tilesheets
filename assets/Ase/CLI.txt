@@ -39,6 +39,8 @@
 ---furniture indoors export---
 "C:\Program Files (x86)\Steam\steamapps\common\Aseprite\aseprite.exe" -b "C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\Mods\[CP] Kailey's Tilesheets\assets\Ase\Indoors\kailey_indoors_furniture.ase" --split-tags --filename-format "C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\Mods\[CP] Kailey's Tilesheets\assets\Indoors"\{tag}\{title}.{extension} --save-as kailey_indoors_furniture.png
 
+---pride furniture indoors export---
+"C:\Program Files (x86)\Steam\steamapps\common\Aseprite\aseprite.exe" -b "C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\Mods\[CP] Kailey's Tilesheets\assets\Ase\Indoors\kailey_indoors_pridefurniture.ase" --split-tags --filename-format "C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\Mods\[CP] Kailey's Tilesheets\assets\Indoors"\{tag}\{title}.{extension} --save-as kailey_indoors_pridefurniture.png
 
 ---*MONSTERS*---
 "C:\Program Files (x86)\Steam\steamapps\common\Aseprite\aseprite.exe" -b "C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\Mods\[CP] Kailey's Tilesheets\assets\Ase\Monsters\kailey_clam_rockcrab.ase" --split-tags --filename-format "C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\Mods\[CP] Kailey's Tilesheets\assets\Monsters"\{tag}\{title}.{extension} --save-as kailey_clam_rockcrab.png
