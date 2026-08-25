@@ -162,7 +162,7 @@
 	//LOADS
 	//MAPS
 		//Mines tilesheets
-		{
+		{//from regular mines to dark mines: 7s -3v HSV
 			"LogName": "Kailey's Tilesheets-Maps-Mines",
 			"Action": "Load",
 			"Target": "Maps/kailey_mine, Maps/kailey_mine_extra, Maps/kailey_mine_dangerous, Maps/kailey_mine_dangerous_extra, Maps/kailey_mine_dark, Maps/kailey_mine_dark_extra, Maps/kailey_mine_dark_dangerous, Maps/kailey_mine_dark_dangerous_extra, Maps/kailey_mine_frost, Maps/kailey_mine_frost_extra, Maps/kailey_mine_frost_dangerous, Maps/kailey_mine_frost_dangerous_extra, Maps/kailey_mine_frost_dark, Maps/kailey_mine_frost_dark_extra, Maps/kailey_mine_frost_dark_dangerous, Maps/kailey_mine_frost_dark_dangerous_extra, Maps/kailey_mine_lava, Maps/kailey_mine_lava_extra, Maps/kailey_mine_lava_dangerous, Maps/kailey_mine_lava_dangerous_extra, Maps/kailey_mine_lava_dark, Maps/kailey_mine_lava_dark_extra, Maps/kailey_mine_lava_dark_dangerous, Maps/kailey_mine_lava_dark_dangerous_extra, Maps/kailey_mine_slime, Maps/kailey_mine_slime_extra, Maps/kailey_mine_slime_dangerous, Maps/kailey_mine_slime_dangerous_extra, Maps/kailey_mine_quarryshaft, Maps/kailey_mine_quarryshaft_extra, Maps/kailey_mine_desert, Maps/kailey_mine_desert_extra, Maps/kailey_mine_desert_dangerous, Maps/kailey_mine_desert_dangerous_extra, Maps/kailey_mine_desert_dark, Maps/kailey_mine_desert_dark_extra, Maps/kailey_mine_desert_dark_dangerous, Maps/kailey_mine_desert_dark_dangerous_extra, Maps/kailey_mine_dino, Maps/kailey_mine_dino_extra, Maps/kailey_mine_volcano, Maps/kailey_mine_volcano_extra, Maps/kailey_mine_waterfalls, Maps/kailey_mine_mushoverlay, Maps/kailey_mine_wateroverlay",
@@ -175,11 +175,18 @@
 			"Target": "Maps/spring_kailey_outdoors, Maps/summer_kailey_outdoors, Maps/fall_kailey_outdoors, Maps/winter_kailey_outdoors, Maps/kailey_desert, Maps/kailey_animations",
 			"FromFile": "assets/Outdoors/{{recolour}}/{{TargetWithoutPath}}.png"
 		},
+		//Tree tilesheets
+		{
+			"LogName": "Kailey's Tilesheets-Maps-Outdoors",
+			"Action": "Load",
+			"Target": "Maps/spring_kailey_common_mush_tree, Maps/summer_kailey_common_mush_tree, Maps/fall_kailey_common_mush_tree, Maps/winter_kailey_common_mush_tree, Maps/spring_kailey_purple_mush_tree, Maps/summer_kailey_purple_mush_tree, Maps/fall_kailey_purple_mush_tree, Maps/winter_kailey_purple_mush_tree",
+			"FromFile": "assets/Outdoors/{{recolour}}/Trees/{{TargetWithoutPath}}.png"
+		},
 		//Outdoors tilesheets- not recoloured
 		{
 			"LogName": "Kailey's Tilesheets-Maps-Outdoors",
 			"Action": "Load",
-			"Target": "Maps/spring_kailey_shadows, Maps/summer_kailey_shadows, Maps/fall_kailey_shadows, Maps/winter_kailey_shadows, Maps/kailey_high_contrast_ruins",
+			"Target": "Maps/spring_kailey_shadows, Maps/summer_kailey_shadows, Maps/fall_kailey_shadows, Maps/winter_kailey_shadows, Maps/kailey_high_contrast_ruins, Maps/kailey_purple_mush_tree_seed, Maps/kailey_common_mush_tree_seed",
 			"FromFile": "assets/Outdoors/{{TargetWithoutPath}}.png"
 		},
 		//Indoors tilesheets
@@ -194,7 +201,7 @@
 		{
 			"LogName": "Kailey's Tilesheets-Maps-Monsters",
 			"Action": "Load",
-			"Target": "Maps/kailey_clam_rockcrab, Maps/kailey_false_chanterelle, Maps/kailey_false_commonmush, Maps/kailey_false_morel, Maps/kailey_false_purplemush, Maps/kailey_false_redmush",
+			"Target": "Maps/kailey_clam_rockcrab, Maps/kailey_false_chanterelle, Maps/kailey_false_commonmush, Maps/kailey_false_morel, Maps/kailey_false_purplemush, Maps/kailey_false_redmush, Maps/kailey_false_minechest",
 			"FromFile": "assets/Monsters/{{itemretexture}}/{{TargetWithoutPath}}.png"
 		},		
 	//CHARACTERS
@@ -203,7 +210,7 @@
 		{
 			"LogName": "Kailey's Tilesheets-Characters-Monsters",
 			"Action": "Load",
-			"Target": "Characters/Monsters/kailey_clam_rockcrab, Characters/Monsters/kailey_false_chanterelle, Characters/Monsters/kailey_false_commonmush, Characters/Monsters/kailey_false_morel, Characters/Monsters/kailey_false_purplemush, Characters/Monsters/kailey_false_redmush",
+			"Target": "Characters/Monsters/kailey_clam_rockcrab, Characters/Monsters/kailey_false_chanterelle, Characters/Monsters/kailey_false_commonmush, Characters/Monsters/kailey_false_morel, Characters/Monsters/kailey_false_purplemush, Characters/Monsters/kailey_false_redmush, Characters/Monsters/kailey_false_minechest",
 			"FromFile": "assets/Monsters/{{itemretexture}}/{{TargetWithoutPath}}.png"
 		},
 		
